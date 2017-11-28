@@ -1,0 +1,56 @@
+
+
+<div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top">
+<h2 class="w3-center" >Alta de Shows para Tv</h2>
+
+<hr>
+
+<form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Titulo</label>
+        <input class="w3-input w3-border" type="text" ng-model="tvShow.title">
+      </div>
+      <div class="w3-section">
+        <label>Año</label>
+        <input class="w3-input w3-border" ng-model="tvShow.year" type="number">
+      </div>
+      <div class="w3-section">
+        <label>Pais</label>
+        <input class="w3-input w3-border"  ng-model="tvShow.country">
+      </div>
+      <div class="w3-section">
+        <label>Poster</label>
+        <input class="w3-input w3-border" ng-model="tvShow.poster">
+      </div> 
+      <div class="w3-section">
+        <label>Temporada</label>
+        <input class="w3-input w3-border"  ng-model="tvShow.seasons" type="number">
+      </div> 
+      <div class="w3-section">
+        <label>Genero</label>
+        <select class="w3-input w3-border" ng-model="tvShow.genre" ng-options="item for item in generos">
+        </select>
+      </div>
+      <div class="w3-section">
+        <label>Descripcion</label>
+        <input class="w3-input w3-border"  ng-model="tvShow.summary">
+      </div> 
+     <br><br>
+		<button ng-click="add(tvShow)" class="agregar">Agregar</button>
+		<br><br>
+    </form><br>
+    
+<!-- <br><br>
+Titulo : <input ng-model="tvShow.title"><br><br>
+Anio : <input ng-model="tvShow.year" type="number"> <br><br>
+Pais : <input ng-model="tvShow.country"><br><br>
+Poster : <input ng-model="tvShow.poster"> <br><br>
+Temporada : <input ng-model="tvShow.seasons" type="number"><br><br>
+Genero : <select ng-model="tvShow.genre" ng-options="item for item in generos">
+</select><br><br>
+Descripcion :<input ng-model="tvShow.summary"> <br><br>
+
+<br><br>
+<button ng-click="add(tvShow)" class="btn btn-primary">Add</button>
+<br><br> -->
+</div>
